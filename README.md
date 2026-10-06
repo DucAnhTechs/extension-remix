@@ -24,3 +24,7 @@ LƯU Ý
 - Chrome chỉ cho manifest khai báo một search provider mặc định tĩnh. Bản này dùng một URL router nội bộ dạng https://multi-search.invalid/... rồi dùng Declarative Net Request để chuyển sang URL của ô đang chọn.
 - Với bản unpacked/local, cơ chế này phục vụ test trực tiếp. Nếu phát hành Chrome Web Store, phần search-provider/settings override còn chịu chính sách và yêu cầu xác minh domain của Chrome Web Store; khi đó nên dùng một domain router HTTPS thuộc quyền sở hữu của bạn.
 
+<p align="center">
+  <img src="./anh1.png" width="45%" />
+  <img src="./anh2.png" width="45%" />
+</p>
