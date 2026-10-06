@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chỉnh sửa công cụ tìm kiếm</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <h1>Chỉnh sửa công cụ tìm kiếm</h1>
+        <p>Mỗi URL phải chứa <code>%s</code>. Khi tìm kiếm, <code>%s</code> sẽ được thay bằng truy vấn.</p>
+      </div>
+      <button id="addEngine" class="add-btn" type="button">+ Thêm ô</button>
+    </header>
+
+    <div id="editorList" class="editor-list"></div>
+
+    <footer class="actions">
+      <span id="status"></span>
+      <button id="saveBtn" class="save-btn" type="button">Lưu</button>
+    </footer>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>

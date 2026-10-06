@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Multi Search Switcher",
+  "version": "1.2.1",
+  "description": "Chọn một trong nhiều URL tìm kiếm và dùng trực tiếp từ thanh địa chỉ Chrome/Edge.",
+  "minimum_chrome_version": "88",
+  "permissions": [
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://multi-search.invalid/*"
+  ],
+  "action": {
+    "default_title": "Multi Search Switcher",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": {
+    "keyword": "ms"
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Multi Search Switcher",
+      "keyword": "multi-search",
+      "search_url": "https://multi-search.invalid/search?q={searchTerms}",
+      "encoding": "UTF-8",
+      "is_default": true,
+      "favicon_url": "https://multi-search.invalid/favicon.ico"
+    }
+  }
+}

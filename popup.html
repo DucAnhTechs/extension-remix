@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi Search</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <h1>Multi Search</h1>
+        <p>Chọn một ô để đổi cách tìm kiếm.</p>
+      </div>
+      <button id="openOptions" class="icon-btn" type="button" title="Chỉnh sửa công cụ">⚙</button>
+    </header>
+
+    <div id="engineList" class="engine-list"></div>
+
+    <form id="searchForm" class="search-box">
+      <input id="query" type="text" placeholder="Nhập truy vấn hoặc @alias ..." autocomplete="off" autofocus />
+      <button type="submit">Tìm</button>
+    </form>
+
+    <p id="activeHint" class="active-hint"></p>
+    <p class="hint">Thanh địa chỉ: gõ <b>ms</b> + Space, rồi nhập truy vấn. Có thể dùng <b>@alias</b> để chọn nhanh công cụ.</p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
